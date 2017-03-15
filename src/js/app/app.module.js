@@ -1,3 +1,9 @@
 'use strict';
 
-angular.module('blogApp', ['blogList']);
+angular.module('blogApp',[
+    'ngResource',
+    'ngRoute',
+
+    // internal
+    'blogList'
+]);

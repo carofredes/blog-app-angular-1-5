@@ -1,1 +1,6 @@
-{{ items }}
+<h1>Blog list</h1>
+<ul>
+    <li ng-repeat='item in items'><a ng-href="/blog/{{item.id}}">{{ item.title}}</a></li>
+</ul>
+
+<span ng-if='items.length == 0'>Post coming soon</span>
